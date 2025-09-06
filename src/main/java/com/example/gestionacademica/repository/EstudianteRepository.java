@@ -1,0 +1,11 @@
+package com.example.gestionacademica.repository;
+
+import com.example.gestionacademica.model.Estudiante;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EstudianteRepository extends JpaRepository<Estudiante, Long> {
+    // Optional<Estudiante> findByCarne(String carne);
+    // List<Estudiante> findByApellidosContainingIgnoreCase(String apellidos);
+}
